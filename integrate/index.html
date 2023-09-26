@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>網頁互動繪圖板</title>
+</head>
+
+<body>
+  <section class="container">
+    <div id="toolbox">
+      <h1>ToolBox</h1>
+      <label for="stroke">Color</label>
+      <input id="stroke" name='stroke' type="color">
+      <label for="lineWidth">Pen Width</label>
+      <input id="lineWidth" name='lineWidth' type="number" value="3">
+      <button id="clear">Clear Board</button>
+      <button id="downloadButton">下載畫面</button>
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+    <div class="drawing-board">
+      <canvas id="drawing-board"></canvas>
+    </div>
+  </section>
+  <script src="./index.js"></script>
+  <script src="./download-script.js"></script>
+  <script src="./upload-script.js"></script>
+</body>
+
+</html>
